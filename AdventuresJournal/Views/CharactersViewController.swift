@@ -13,9 +13,10 @@ class CharactersViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         characters.append(AECharacter(name: "Boris"))
-        tableView.reloadData()
+        characters.append(AECharacter(name: "Pavel"))
+        self.tableView.reloadData()
         
         view.backgroundColor = .white
         
@@ -26,20 +27,16 @@ class CharactersViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let characterView = UIViewController()
-        characterView.view.backgroundColor = .white
-        
         let character = characters[indexPath.row]
         
-        characterView.navigationItem.title = character.name
+        let characterView = CharacterTabViewController(character: character)
         
         navigationController?.pushViewController(characterView, animated: true)
     }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C39A0F41FBD263500ADA09B /* CharacterTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39A0F31FBD263500ADA09B /* CharacterTabViewController.swift */; };
 		4CB336FC1FBD134D007F915D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB336FB1FBD134D007F915D /* AppDelegate.swift */; };
 		4CB337011FBD134D007F915D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB336FF1FBD134D007F915D /* Main.storyboard */; };
 		4CB337031FBD134D007F915D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB337021FBD134D007F915D /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C39A0F31FBD263500ADA09B /* CharacterTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTabViewController.swift; sourceTree = "<group>"; };
 		4CB336F81FBD134D007F915D /* AdventuresJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventuresJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB336FB1FBD134D007F915D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB337001FBD134D007F915D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB3372D1FBD1D3C007F915D /* CharactersViewController.swift */,
+				4C39A0F31FBD263500ADA09B /* CharacterTabViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C39A0F41FBD263500ADA09B /* CharacterTabViewController.swift in Sources */,
 				4CB3372B1FBD16BB007F915D /* AECharacter.swift in Sources */,
 				4CB336FC1FBD134D007F915D /* AppDelegate.swift in Sources */,
 				4CB3372E1FBD1D3C007F915D /* CharactersViewController.swift in Sources */,

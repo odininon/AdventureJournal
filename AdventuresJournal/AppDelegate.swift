@@ -8,6 +8,12 @@
 
 import UIKit
 
+class CustomNavigationController: UINavigationController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let viewController = CharactersViewController()
     
-        let navController = UINavigationController(rootViewController: viewController)
+        let navController = CustomNavigationController(rootViewController: viewController)
         
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().isTranslucent = false
