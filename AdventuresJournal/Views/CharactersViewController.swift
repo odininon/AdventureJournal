@@ -13,27 +13,34 @@ class CharactersViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         characters.append(AECharacter(name: "Boris"))
+        tableView.reloadData()
         
         view.backgroundColor = .white
+        
         navigationItem.title = "Characters"
         
+        tableView.backgroundColor = .white
         tableView.separatorColor = .black
         tableView.tableFooterView = UIView()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
         
-        tableView.reloadData()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let characterView = UIViewController()
+        characterView.view.backgroundColor = .white
+        
+        let character = characters[indexPath.row]
+        
+        characterView.navigationItem.title = character.name
+        
+        navigationController?.pushViewController(characterView, animated: true)
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         
@@ -48,19 +55,7 @@ class CharactersViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let characterViewController = UIViewController()
-        
-        let character = characters[indexPath.row]
-        
-        characterViewController.navigationItem.title = character.name
-        
-        self.navigationController?.pushViewController(characterViewController, animated: true)
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characters.count
     }
-
 }
-
