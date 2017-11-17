@@ -1,0 +1,21 @@
+PODS:
+  - Coordinator (5.1.3)
+
+DEPENDENCIES:
+  - Coordinator (from `https://github.com/radianttap/Coordinator.git`)
+
+EXTERNAL SOURCES:
+  Coordinator:
+    :git: https://github.com/radianttap/Coordinator.git
+
+CHECKOUT OPTIONS:
+  Coordinator:
+    :commit: e845a42378019101325632b20993925aca02a038
+    :git: https://github.com/radianttap/Coordinator.git
+
+SPEC CHECKSUMS:
+  Coordinator: 7f2d43cf80d8c668c54d530a892b23df7ff03fe7
+
+PODFILE CHECKSUM: c25eccdb85a952bc16cf17fe70a6b213c46f5fdd
+
+COCOAPODS: 1.3.1

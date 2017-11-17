@@ -9,34 +9,49 @@
 import UIKit
 
 class CharactersViewController: UITableViewController {
-    var characters = [AECharacter]()
-    
+    var characters: [AECharacter] = [] {
+        didSet {
+            if !self.isViewLoaded { return }
+            tableView.reloadData()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        characters.append(AECharacter(name: "Boris"))
-        characters.append(AECharacter(name: "Pavel"))
-        self.tableView.reloadData()
-        
         view.backgroundColor = .white
-        
-        navigationItem.title = "Characters"
         
         tableView.backgroundColor = .white
         tableView.separatorColor = .black
         tableView.tableFooterView = UIView()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCharacter))
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+        
+        updateData()
     }
     
+    @objc func addCharacter() {
+        showAddCharacter(sender: self)
+    }
+    
+    private func updateData() {
+        fetchCharacters(sender: self) { [weak self] characters, _ in
+            guard let `self` = self else { return }
+            DispatchQueue.main.async {
+                self.characters = characters
+            }
+        }
+    }
+}
+
+extension CharactersViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = characters[indexPath.row]
         
-        let characterView = CharacterTabViewController(character: character)
-        
-        navigationController?.pushViewController(characterView, animated: true)
+        showCharacter(character, sender: self)
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
