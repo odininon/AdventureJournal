@@ -2,55 +2,46 @@
 //  CharactersViewController.swift
 //  AdventuresJournal
 //
-//  Created by Michael Stengel on 11/15/17.
+//  Created by Michael Stengel on 12/2/17.
 //  Copyright © 2017 Michael Stengel. All rights reserved.
 //
 
 import UIKit
 
-class CharactersViewController: UITableViewController {
-    var characters: [AECharacter] = [] {
+protocol CharactersViewControllerDelegate: class  {
+    func showCharacter(_ character: String)
+    func showAddCharacter()
+}
+
+class CharactersViewController: AETableViewController {
+    var delegate: CharactersViewControllerDelegate?
+    
+    var characters: [String] = [] {
         didSet {
             if !self.isViewLoaded { return }
             tableView.reloadData()
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
-        
-        tableView.backgroundColor = .white
-        tableView.separatorColor = .black
-        tableView.tableFooterView = UIView()
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCharacter))
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(toggleAddCharacterView))
+
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-        
-        updateData()
     }
     
-    @objc func addCharacter() {
-        showAddCharacter(sender: self)
-    }
-    
-    private func updateData() {
-        fetchCharacters(sender: self) { [weak self] characters, _ in
-            guard let `self` = self else { return }
-            DispatchQueue.main.async {
-                self.characters = characters
-            }
-        }
+    @objc func toggleAddCharacterView() {
+        delegate?.showAddCharacter()
     }
 }
+
 
 extension CharactersViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = characters[indexPath.row]
         
-        showCharacter(character, sender: self)
+        delegate?.showCharacter(character)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,7 +51,7 @@ extension CharactersViewController {
         
         let character = characters[indexPath.row]
         
-        cell.textLabel?.text = character.name
+        cell.textLabel?.text = character
         cell.textLabel?.textColor = .black
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         

@@ -21,14 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var appCoordinator: AppCoordinator = {
-        let navController = CustomNavigationController()
-        return AppCoordinator(rootViewController: navController)
+        var vc = CustomNavigationController()
+        return AppCoordinator(with: vc)
     }()
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = appCoordinator.rootViewController
+        window?.rootViewController = appCoordinator.navigationController
         
         return true
     }

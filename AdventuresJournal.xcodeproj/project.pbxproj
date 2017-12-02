@@ -7,24 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C55188A1FBF747D00F6ABB1 /* NeedsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5518891FBF747D00F6ABB1 /* NeedsDependency.swift */; };
-		4C55188D1FBF753000F6ABB1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55188C1FBF753000F6ABB1 /* AppCoordinator.swift */; };
-		4C55188F1FBF7CAA00F6ABB1 /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55188E1FBF7CAA00F6ABB1 /* CharactersCoordinator.swift */; };
-		4C9BE3861FBF936C00477C6E /* AdventuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE3851FBF936C00477C6E /* AdventuresViewController.swift */; };
-		4C9BE38B1FBFA20B00477C6E /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE38A1FBFA20B00477C6E /* UIResponder.swift */; };
-		4C9BE38E1FBFA34100477C6E /* CharacterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE38D1FBFA34100477C6E /* CharacterManager.swift */; };
-		4C9BE3901FBFA36000477C6E /* AdventuresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE38F1FBFA36000477C6E /* AdventuresManager.swift */; };
-		4C9BE3921FBFA43000477C6E /* AEAdventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE3911FBFA43000477C6E /* AEAdventure.swift */; };
-		4C9BE3941FBFA47700477C6E /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE3931FBFA47700477C6E /* AppDependency.swift */; };
-		4C9BE3961FBFAC0300477C6E /* AddCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BE3951FBFAC0300477C6E /* AddCharacterViewController.swift */; };
+		4C1014331FD33CC800DA144C /* CharacterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1014321FD33CC800DA144C /* CharacterManager.swift */; };
+		4C1014351FD33CEA00DA144C /* AdventuresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1014341FD33CEA00DA144C /* AdventuresManager.swift */; };
+		4C1014371FD33D6500DA144C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1014361FD33D6500DA144C /* AppCoordinator.swift */; };
+		4C1014391FD3411C00DA144C /* CharacterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1014381FD3411C00DA144C /* CharacterCoordinator.swift */; };
+		4C10143B1FD341B400DA144C /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10143A1FD341B400DA144C /* CharactersViewController.swift */; };
+		4C10143D1FD34B2700DA144C /* AventuresCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10143C1FD34B2700DA144C /* AventuresCoordinator.swift */; };
+		4C10143F1FD34EC900DA144C /* AdventuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10143E1FD34EC900DA144C /* AdventuresViewController.swift */; };
+		4C1014411FD34FB100DA144C /* AETableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1014401FD34FB100DA144C /* AETableViewController.swift */; };
+		4C1014431FD3516300DA144C /* AddCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1014421FD3516300DA144C /* AddCharacterViewController.swift */; };
 		4CB336FC1FBD134D007F915D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB336FB1FBD134D007F915D /* AppDelegate.swift */; };
 		4CB337011FBD134D007F915D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB336FF1FBD134D007F915D /* Main.storyboard */; };
 		4CB337031FBD134D007F915D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB337021FBD134D007F915D /* Assets.xcassets */; };
 		4CB337061FBD134D007F915D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB337041FBD134D007F915D /* LaunchScreen.storyboard */; };
 		4CB337111FBD134D007F915D /* AdventuresJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB337101FBD134D007F915D /* AdventuresJournalTests.swift */; };
 		4CB3371C1FBD134D007F915D /* AdventuresJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3371B1FBD134D007F915D /* AdventuresJournalUITests.swift */; };
-		4CB3372B1FBD16BB007F915D /* AECharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3372A1FBD16BB007F915D /* AECharacter.swift */; };
-		4CB3372E1FBD1D3C007F915D /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3372D1FBD1D3C007F915D /* CharactersViewController.swift */; };
 		562644A1BBC67DE3D8FA2878 /* Pods_AdventuresJournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A0188B6C6201B420553448 /* Pods_AdventuresJournal.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,16 +57,15 @@
 
 /* Begin PBXFileReference section */
 		2D21C4BD10A48AB2FF606E63 /* Pods-AdventuresJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventuresJournal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventuresJournal/Pods-AdventuresJournal.debug.xcconfig"; sourceTree = "<group>"; };
-		4C5518891FBF747D00F6ABB1 /* NeedsDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedsDependency.swift; sourceTree = "<group>"; };
-		4C55188C1FBF753000F6ABB1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		4C55188E1FBF7CAA00F6ABB1 /* CharactersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
-		4C9BE3851FBF936C00477C6E /* AdventuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventuresViewController.swift; sourceTree = "<group>"; };
-		4C9BE38A1FBFA20B00477C6E /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
-		4C9BE38D1FBFA34100477C6E /* CharacterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManager.swift; sourceTree = "<group>"; };
-		4C9BE38F1FBFA36000477C6E /* AdventuresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventuresManager.swift; sourceTree = "<group>"; };
-		4C9BE3911FBFA43000477C6E /* AEAdventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEAdventure.swift; sourceTree = "<group>"; };
-		4C9BE3931FBFA47700477C6E /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
-		4C9BE3951FBFAC0300477C6E /* AddCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharacterViewController.swift; sourceTree = "<group>"; };
+		4C1014321FD33CC800DA144C /* CharacterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManager.swift; sourceTree = "<group>"; };
+		4C1014341FD33CEA00DA144C /* AdventuresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventuresManager.swift; sourceTree = "<group>"; };
+		4C1014361FD33D6500DA144C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4C1014381FD3411C00DA144C /* CharacterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCoordinator.swift; sourceTree = "<group>"; };
+		4C10143A1FD341B400DA144C /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		4C10143C1FD34B2700DA144C /* AventuresCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AventuresCoordinator.swift; sourceTree = "<group>"; };
+		4C10143E1FD34EC900DA144C /* AdventuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventuresViewController.swift; sourceTree = "<group>"; };
+		4C1014401FD34FB100DA144C /* AETableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AETableViewController.swift; sourceTree = "<group>"; };
+		4C1014421FD3516300DA144C /* AddCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharacterViewController.swift; sourceTree = "<group>"; };
 		4CB336F81FBD134D007F915D /* AdventuresJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventuresJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB336FB1FBD134D007F915D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB337001FBD134D007F915D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,8 +78,6 @@
 		4CB337171FBD134D007F915D /* AdventuresJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventuresJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB3371B1FBD134D007F915D /* AdventuresJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventuresJournalUITests.swift; sourceTree = "<group>"; };
 		4CB3371D1FBD134D007F915D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CB3372A1FBD16BB007F915D /* AECharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AECharacter.swift; sourceTree = "<group>"; };
-		4CB3372D1FBD1D3C007F915D /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		B22592844855351644EEBF0A /* Pods-AdventuresJournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventuresJournal.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventuresJournal/Pods-AdventuresJournal.release.xcconfig"; sourceTree = "<group>"; };
 		B4A0188B6C6201B420553448 /* Pods_AdventuresJournal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventuresJournal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,22 +117,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4C55188B1FBF752100F6ABB1 /* Coordinators */ = {
+		4C1014301FD33C9F00DA144C /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				4C55188C1FBF753000F6ABB1 /* AppCoordinator.swift */,
-				4C55188E1FBF7CAA00F6ABB1 /* CharactersCoordinator.swift */,
+				4C1014321FD33CC800DA144C /* CharacterManager.swift */,
+				4C1014381FD3411C00DA144C /* CharacterCoordinator.swift */,
+				4C10143A1FD341B400DA144C /* CharactersViewController.swift */,
+				4C1014421FD3516300DA144C /* AddCharacterViewController.swift */,
 			);
-			path = Coordinators;
+			path = Characters;
 			sourceTree = "<group>";
 		};
-		4C9BE38C1FBFA33100477C6E /* Managers */ = {
+		4C1014311FD33CB000DA144C /* Adventures */ = {
 			isa = PBXGroup;
 			children = (
-				4C9BE38D1FBFA34100477C6E /* CharacterManager.swift */,
-				4C9BE38F1FBFA36000477C6E /* AdventuresManager.swift */,
+				4C1014341FD33CEA00DA144C /* AdventuresManager.swift */,
+				4C10143C1FD34B2700DA144C /* AventuresCoordinator.swift */,
+				4C10143E1FD34EC900DA144C /* AdventuresViewController.swift */,
 			);
-			path = Managers;
+			path = Adventures;
 			sourceTree = "<group>";
 		};
 		4CB336EF1FBD134D007F915D = {
@@ -166,18 +163,15 @@
 		4CB336FA1FBD134D007F915D /* AdventuresJournal */ = {
 			isa = PBXGroup;
 			children = (
-				4C9BE38C1FBFA33100477C6E /* Managers */,
-				4C55188B1FBF752100F6ABB1 /* Coordinators */,
-				4CB3372C1FBD1D2B007F915D /* Views */,
-				4CB337291FBD16AA007F915D /* Models */,
+				4C1014311FD33CB000DA144C /* Adventures */,
+				4C1014301FD33C9F00DA144C /* Characters */,
+				4C1014361FD33D6500DA144C /* AppCoordinator.swift */,
 				4CB336FB1FBD134D007F915D /* AppDelegate.swift */,
-				4C9BE3931FBFA47700477C6E /* AppDependency.swift */,
-				4C5518891FBF747D00F6ABB1 /* NeedsDependency.swift */,
-				4C9BE38A1FBFA20B00477C6E /* UIResponder.swift */,
 				4CB336FF1FBD134D007F915D /* Main.storyboard */,
 				4CB337021FBD134D007F915D /* Assets.xcassets */,
 				4CB337041FBD134D007F915D /* LaunchScreen.storyboard */,
 				4CB337071FBD134D007F915D /* Info.plist */,
+				4C1014401FD34FB100DA144C /* AETableViewController.swift */,
 			);
 			path = AdventuresJournal;
 			sourceTree = "<group>";
@@ -198,25 +192,6 @@
 				4CB3371D1FBD134D007F915D /* Info.plist */,
 			);
 			path = AdventuresJournalUITests;
-			sourceTree = "<group>";
-		};
-		4CB337291FBD16AA007F915D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4CB3372A1FBD16BB007F915D /* AECharacter.swift */,
-				4C9BE3911FBFA43000477C6E /* AEAdventure.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4CB3372C1FBD1D2B007F915D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4CB3372D1FBD1D3C007F915D /* CharactersViewController.swift */,
-				4C9BE3851FBF936C00477C6E /* AdventuresViewController.swift */,
-				4C9BE3951FBFAC0300477C6E /* AddCharacterViewController.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		D7653658D6C432EFBE2CD0C6 /* Frameworks */ = {
@@ -419,19 +394,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C9BE3861FBF936C00477C6E /* AdventuresViewController.swift in Sources */,
-				4C55188D1FBF753000F6ABB1 /* AppCoordinator.swift in Sources */,
-				4CB3372B1FBD16BB007F915D /* AECharacter.swift in Sources */,
-				4C9BE38B1FBFA20B00477C6E /* UIResponder.swift in Sources */,
-				4C9BE3921FBFA43000477C6E /* AEAdventure.swift in Sources */,
-				4C55188A1FBF747D00F6ABB1 /* NeedsDependency.swift in Sources */,
-				4C9BE3961FBFAC0300477C6E /* AddCharacterViewController.swift in Sources */,
-				4C9BE3941FBFA47700477C6E /* AppDependency.swift in Sources */,
+				4C1014431FD3516300DA144C /* AddCharacterViewController.swift in Sources */,
+				4C1014331FD33CC800DA144C /* CharacterManager.swift in Sources */,
+				4C10143F1FD34EC900DA144C /* AdventuresViewController.swift in Sources */,
+				4C1014411FD34FB100DA144C /* AETableViewController.swift in Sources */,
 				4CB336FC1FBD134D007F915D /* AppDelegate.swift in Sources */,
-				4C9BE3901FBFA36000477C6E /* AdventuresManager.swift in Sources */,
-				4C9BE38E1FBFA34100477C6E /* CharacterManager.swift in Sources */,
-				4CB3372E1FBD1D3C007F915D /* CharactersViewController.swift in Sources */,
-				4C55188F1FBF7CAA00F6ABB1 /* CharactersCoordinator.swift in Sources */,
+				4C10143D1FD34B2700DA144C /* AventuresCoordinator.swift in Sources */,
+				4C10143B1FD341B400DA144C /* CharactersViewController.swift in Sources */,
+				4C1014391FD3411C00DA144C /* CharacterCoordinator.swift in Sources */,
+				4C1014371FD33D6500DA144C /* AppCoordinator.swift in Sources */,
+				4C1014351FD33CEA00DA144C /* AdventuresManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
